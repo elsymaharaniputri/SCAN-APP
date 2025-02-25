@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en-US" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- ===============================================-->
+    <!--    Document Title-->
+    <!-- ===============================================-->
+    <title>DASHBOARD ADMIN </title>
+
+
+    <!-- ===============================================-->
+    <!--    Favicons-->
+    <!-- ===============================================-->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicons/favicon.ico">
+    <link rel="manifest" href="assets/img/favicons/manifest.json">
+    <meta name="msapplication-TileImage" content="assets/img/favicons/mstile-150x150.png">
+    <meta name="theme-color" content="#ffffff">
+    <script src="assets/js/config.js"></script>
+
+
+    <!-- ===============================================-->
+    <!--    Stylesheets-->
+    <!-- ===============================================-->
+    <link rel="stylesheet" href="vendors/swiper/swiper-bundle.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="assets/css/theme.css" rel="stylesheet" id="style-default">
+    <link href="assets/css/my-theme.css" rel="stylesheet" id="style-default">
+    <link href="assets/css/user-rtl.css" rel="stylesheet" id="user-style-rtl">
+    <link href="assets/css/user.css" rel="stylesheet" id="user-style-default">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+<style>
+   
+* {
+  font-family: "Poppins", sans-serif;
+}
+  
+body {
+  display: grid;
+  place-items: center;
+  margin: 0;
+  height: 100vh;
+}
+
+main {
+  width: 50%;
+  min-width: 1000px;
+  background: linear-gradient(90deg, rgb(61, 148, 122) 0%, rgb(248, 233, 157) 100%);
+  border-radius: 30px;
+  position: relative;
+  padding-bottom: 1rem ;
+
+}
+
+h3, h1, p {
+  margin: 0 30px;
+}
+
+
+h3 {
+  margin-top: 30px;
+  color: white;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+h1 {
+  margin-bottom: 30px;
+  color: white;
+  font-size: 48px;
+}
+
+p {
+  margin: 30px;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+button {
+  padding: 20px 40px;
+  border-radius: 100px;
+  border: none;
+  background-color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#downloadBtn {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  margin-right: 10px;
+  position: relative;
+}
+
+#downloadBtn::before, #downloadBtn::after {
+  content: "";
+  position: absolute;
+  height: 60px;
+  width: 30px;
+  background-color: transparent;
+}
+
+#downloadBtn::before {
+  box-shadow: 0 -30px 0 0 white;
+  top: 100%;
+  left: 0;
+  border-top-left-radius: 30px;
+}
+
+#downloadBtn::after {
+  box-shadow: 0 30px 0 0 white;
+  top: -60px;
+  left: 0;
+  border-bottom-left-radius: 30px;
+}
+
+#chameleon {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  height: 390px;
+  width: 600px;
+  background-image: url("./assets/img/3d/dashboard-admin.png");
+  background-repeat: no-repeat;
+  background-size: auto 450px;
+}
+
+@media (max-width: 1000px) {
+  body {
+    transform: scale(0.5);
+  }
+}
+</style>
+</head>
+
+
+<body>
+
+    <!-- ===============================================-->
+    <!--    Main Content-->
+    <!-- ===============================================-->
+<main>
+    <h3>Dashboard Absende</h3>
+    <h1>ADMIN SITE</h1>
+    <button id="downloadBtn"><a href="admin-guru.html" target="_blank" rel="noopener noreferrer">Guru</a></button>
+    <button> <a href="admin-siswa.html" target="_blank" rel="noopener noreferrer">Siswa</a></button>
+    <div class="dropdown mt-3 ms-3">
+  <button class="btn dropdown-toggle " type="button" data-bs-toggle="dropdown" aria-expanded="false" style=" width: 25%; padding: 10px 10px;
+  border-radius: 100px;
+  border: none;
+  background-color: white;
+  ">
+        Pilih 
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Masuk</a></li>
+        <li><a class="dropdown-item" href="#">Libur</a></li>
+      </ul>
+    </div>
+    <div id="chameleon"></div>
+</main>
+    <!-- ===============================================-->
+    <!--    End of Main Content-->
+    <!-- ===============================================-->
+
+
+
+
+    <!-- ===============================================-->
+    <!--    JavaScripts-->
+    <!-- ===============================================-->
+
+
+    <script src="vendors/popper/popper.min.js"></script>
+    <script src="vendors/bootstrap/bootstrap.min.js"></script>
+    <script src="vendors/is/is.min.js"></script>
+    <script src="vendors/countup/countUp.umd.js"></script>
+    <script src="vendors/swiper/swiper-bundle.min.js"></script>
+    <script src="vendors/lodash/lodash.min.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
+    <script src="vendors/list.js/list.min.js"></script>
+    <script src="assets/js/theme.js"></script>
+    <script src="assets/js/mine-js.js"></script>
+
+</body>
+
+</html>

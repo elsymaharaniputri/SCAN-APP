@@ -1,0 +1,60 @@
+:root {
+    --primary-green:#276552;
+    --secondary-yellow: #ffe6b4;
+    --primary-yellow: #f5c15a;
+    --secondary-green: #9dc9a5;
+}
+
+
+
+.text-yellow{
+   color: var(--primary-yellow); 
+}
+.text-green{
+    color: var(--primary-green);
+}
+  .img-responsive {
+      max-width: 80px;
+      height: auto;
+  }
+
+        .img-responsive2 {
+            max-width: 150px;
+            height: auto;
+        }
+
+       
+        .logo-img {
+                max-width: 140px;
+                max-height: 300px;
+                width: auto;
+                height: auto;
+                object-fit: contain;
+            
+        }
+
+                @media only screen and (max-width: 600px) {
+                    #login-image {
+                        left: 140%;
+                        transform: translateX(-140%);
+                    }
+                }
+
+                        @media only screen and (min-width: 800px) and (max-width: 1200px) {
+                            .android-bottom {
+                                display: flex;
+                                margin-bottom: 20px;
+                            }
+            
+                            .android-justify-center {
+                                justify-content: center !important;
+                                display: flex;
+                                text-align: center;
+                            }
+            
+                            .center-horizontal {
+                                display: flex;
+                                justify-content: center;
+                            }
+                        }
+         
